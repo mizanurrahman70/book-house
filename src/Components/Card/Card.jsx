@@ -17,6 +17,7 @@ const Card = () => {
           <h2 className="mb-1 text-xl font-semibold ">The Catcher in the Rye By </h2>
             <p className="text-sm text-gray-400">Awlad Hossain</p>
           </div>
+          <div class="divider"></div> 
         </div>
         <div className="flex flex-wrap justify-between">
             <div className="space-x-2">
