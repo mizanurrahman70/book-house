@@ -15,7 +15,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
    
     <Navber></Navber>
     <Banner></Banner>
-    <Card></Card>
     <Book></Book>
     <BookCard></BookCard>
     
