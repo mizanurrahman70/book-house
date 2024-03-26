@@ -16,7 +16,7 @@ const Navber = () => {
         <li><a>Item 5</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Book Liberary</a>
+    <a className="btn btn-ghost text-2xl font-extrabold ">Book Liberary</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -24,13 +24,13 @@ const Navber = () => {
       <li><a>Home</a></li>
       <li><a>Listed Books</a></li>
       <li><a>  Pages to Read </a></li>
-      <li><a>Item 5</a></li>
-      <li><a>Item 1</a></li>
+      <li><a>Book List</a></li>
+      <li><a>Contact</a></li>
     </ul>
   </div>
   <div className="navbar-end gap-5">
-    <a className="btn">Sign In </a>
-    <a className="btn">Sign Up</a>
+    <a className="btn bg-indigo-600">Sign In </a>
+    <a className="btn bg-green-500">Sign Up</a>
   </div>
  
 </div>

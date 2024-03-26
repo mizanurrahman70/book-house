@@ -6,6 +6,7 @@ import Navber from './Pageses/Navber/Navber.jsx'
 import Banner from './Components/Banner.jsx'
 import Card from './Components/Card/Card.jsx'
 import Book from './Pageses/Navber/Book/Book.jsx'
+import BookCard from './Components/BookCard/BookCard.jsx'
 
 
 
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Banner></Banner>
     <Card></Card>
     <Book></Book>
+    <BookCard></BookCard>
     
   </React.StrictMode>,
 )
