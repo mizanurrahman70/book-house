@@ -22,4 +22,34 @@ export const saveBook = book => {
     toast.success('Book added successfully!'); // Using toast.success to display success message
 }
 
- 
+// while list card add 
+export const getDataWhile=()=>{
+    let whileData=[]
+    const haveData=localStorage.getItem('while')
+    if(haveData){
+        whileData=JSON.parse(haveData)
+    }
+    return whileData
+
+}
+// while save data 
+export const whileSave = (data) => {
+    const read=getData()
+    const have =read.find(data=>data.bookId === data.bookId)
+    if(have){
+        toast.error("Book already read!");
+        return
+    }
+    let whileData = getDataWhile();
+   
+    const isExists = whileData.some(item => item.bookId === data.bookId);
+    if (isExists) {
+        toast.error("Book already exists!");
+        return;
+    } else {
+        whileData.push(data); // Append new data to the existing array
+        localStorage.setItem('while', JSON.stringify(whileData)); // Using 'while' as the key for storage
+        toast.success('Book added successfully!');
+    }
+}
+

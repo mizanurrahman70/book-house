@@ -13,10 +13,10 @@ const RedCard = () => {
       const savedBlogs = getData()
       setBlogs(savedBlogs)
     }, [])
-   console.log(blogs)
+   
     
     return (
-        <div className='space-y-5'>
+        <div className='space-y-5 mt-5'>
             {
                 blogs.map(book=><RdCard book={book}></RdCard>)
             }

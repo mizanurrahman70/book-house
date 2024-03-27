@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Contact from "../Contact/Contact";
-import { saveBook } from "../../utility/LocalStore";
+import { saveBook, whileSave } from "../../utility/LocalStore";
+import { data } from "autoprefixer";
 
 const Book = () => {
   const Books =useLoaderData()
@@ -19,6 +20,9 @@ const Book = () => {
     const buttonHandle = (book) => {
       saveBook(book); 
     };
+    const whileButton=(book)=>{
+      whileSave(book)
+    }
     return (
      
         <div className=" min-h-screen bg-base-600 mt-10">
@@ -62,7 +66,7 @@ const Book = () => {
                <div className='flex gap-5'>
                
                <button onClick={()=>buttonHandle(book)} class="btn btn-secondary bg-green-600 border-none">Red</button>
-               <button class="btn btn-secondary bg-purple-900 border-none">While List</button>
+               <button onClick={()=>whileButton(book)} class="btn btn-secondary bg-purple-900 border-none">While List</button>
                </div>
           </div>
           <div className="shrink-0 w-[573px]  rounded-3xl bg-slate-200 ">
