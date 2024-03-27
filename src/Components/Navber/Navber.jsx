@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navber = () => {
     return (
@@ -18,14 +19,15 @@ const Navber = () => {
     </div>
     <a className="btn btn-ghost text-2xl font-extrabold ">Book Liberary</a>
   </div>
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+  <div className="navbar-center hidden lg:flex items-center">
+    <ul className="menu menu-horizontal px-1 space-x-5">
    
-      <li><a>Home</a></li>
-      <li><a>Listed Books</a></li>
-      <li><a>  Pages to Read </a></li>
-      <li><a>Book List</a></li>
-      <li><a>Contact</a></li>
+       <li><NavLink to='/'>Home</NavLink></li>  
+     <li> <NavLink to='/listed'>Listed Books</NavLink></li>
+      <li><NavLink to='/bar' >Pages to Read</NavLink></li>
+      
+      <li><NavLink to='/contact'>Contact</NavLink></li>
+     <li> <NavLink to='/about'>About</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end gap-5">

@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+
+
 const Banner = () => {
     return (
         <section className="bg-gray-800 text-gray-100 mt-10 rounded-md">
