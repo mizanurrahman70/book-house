@@ -65,8 +65,8 @@ const Book = () => {
 
                <div className='flex gap-5'>
                
-               <button onClick={()=>buttonHandle(book)} class="btn btn-secondary bg-green-600 border-none">Red</button>
-               <button onClick={()=>whileButton(book)} class="btn btn-secondary bg-purple-900 border-none">While List</button>
+               <button onClick={()=>buttonHandle(book)} class="btn btn-secondary bg-green-600 border-none">Read</button>
+               <button onClick={()=>whileButton(book)} class="btn btn-secondary bg-purple-900 border-none">Wishlist</button>
                </div>
           </div>
           <div className="shrink-0 lg:w-[573px]  rounded-3xl bg-slate-200 ">

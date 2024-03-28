@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navber = () => {
     return (
@@ -18,7 +18,7 @@ const Navber = () => {
      <li> <NavLink to='/about'>About</NavLink></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-2xl font-extrabold ">Book Liberary</a>
+   <Link to='/'><p className="btn btn-ghost text-2xl font-extrabold ">Book Liberary</p></Link> 
   </div>
   <div className="navbar-center hidden lg:flex items-center">
     <ul className="menu menu-horizontal px-1 space-x-5">

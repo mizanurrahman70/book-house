@@ -9,8 +9,8 @@ const ListedBook = () => {
   
     return (
         <div>
-            <div className='w-[1169px] h-[100px] bg-slate-400 mx-auto'>
-                <h1 className='text-2xl flex items-center justify-center'> Book</h1>
+            <div className='w-[1169px] h-[100px] bg-slate-400 mx-auto rounded-md'>
+                <h1 className='text-3xl flex items-center justify-center pt-5'> Book</h1>
             </div>
             <div className="flex mt-5">
 	<Link to=''><p onClick={()=>setActive(1)} rel="noopener noreferrer" href="#" className={`flex flex-shrink-0 px-5 py-3 space-x-2 dark:border-gray-600 dark:text-gray-600 ${active== 1?'border border-b-0' : 'border-b'}`}>

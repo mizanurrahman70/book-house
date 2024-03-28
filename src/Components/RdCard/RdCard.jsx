@@ -12,7 +12,7 @@ const RdCard = ({ book }) => {
 
 
     return (
-        <div className="w-full lg:card lg:card-side bg-base-100 shadow-xl border-2">
+        <div className="w-full lg:card lg:card-side bg-base-100 shadow-xl border-2 py-5">
             <div>  <figure><img src={image} alt="Movie" /></figure></div>
             <div className=' flex flex-col text-start ml-5'>
                 <h1 className='text-3xl '>{bookName}</h1>
