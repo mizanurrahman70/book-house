@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-           <div className='grid grid-cols-3 gap-5'>
+           <div className=' grid lg:grid-cols-3 gap-5'>
            {
                 Book.map(book=><Card book={book}></Card>)
             }

@@ -49,7 +49,7 @@ const WhileCard = ({ book }) => {
                 <div className='flex gap-5 mt-5'>
                     <button class="btn border-none btn-secondary bg-[#328EFF]">Catcher: <span>{category}</span></button>
                     <button class="btn border-none bg-[#FFAC33] btn-secondary">Rating: {rating}</button>
-                    <Link to={`/${book.bookId}`}><button class="btn bg-green-600 border-none btn-secondary">View Details</button></Link>
+                    <button class="btn bg-green-600 border-none btn-secondary">View Details</button>
                 </div>
             </div>
         </div>

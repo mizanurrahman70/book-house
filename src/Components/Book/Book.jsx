@@ -25,7 +25,7 @@ const Book = () => {
     }
     return (
      
-        <div className=" min-h-screen bg-base-600 mt-10">
+        <div className="overflow-hidden min-h-screen bg-base-600 mt-10">
         <div className="flex justify-center flex-col lg:flex-row-reverse gap-10 ">
           <div className="flex flex-col text-start space-y-5">
             <h1 className='text-3xl font-extrabold'>{bookName}</h1>
@@ -33,7 +33,7 @@ const Book = () => {
             <hr />
             <h1 className='text-2xl'>{category}</h1>
             <hr />
-            <p className='w-[400px]'><span className='font-extrabold '>Revews</span>{review}<span></span></p>
+            <p className='lg:w-[400px]'><span className='font-extrabold '>Revews</span>{review}<span></span></p>
             <div className='flex gap-5'>
                <div>
                 <p className='font-extrabold '> Tags</p>
@@ -69,8 +69,8 @@ const Book = () => {
                <button onClick={()=>whileButton(book)} class="btn btn-secondary bg-purple-900 border-none">While List</button>
                </div>
           </div>
-          <div className="shrink-0 w-[573px]  rounded-3xl bg-slate-200 ">
-            <img className='w-[425px] h-[564px] mx-auto' src={image} alt="" />
+          <div className="shrink-0 lg:w-[573px]  rounded-3xl bg-slate-200 ">
+            <img className='lg:w-[425px] lg:h-[564px] mx-auto' src={image} alt="" />
           </div>
         </div>
       </div>

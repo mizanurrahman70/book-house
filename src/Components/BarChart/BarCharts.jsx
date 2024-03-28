@@ -23,14 +23,15 @@ const BarCharts=()=> {
 
   useEffect(() => {
     const savedBlogs = getData(); 
-    const data = savedBlogs.map(data => ({
-      name: data.bookName,
-      uv: data.totalPages,
-    }))
+    
+    // const data = savedBlogs.map(data => ({
+    //   name: data.bookName,
+    //   uv: data.totalPages,
+    // }))
     setBlogs(savedBlogs); 
   }, []);
 
-  console.log(name,uv);
+  console.log(blogs)
 
   return (
     <BarChart
@@ -45,9 +46,9 @@ const BarCharts=()=> {
       }}
     >
       <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
+      <XAxis dataKey="bookName" />
       <YAxis />
-      <Bar dataKey="uv" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
+      <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
         {blogs.map((entry, index) => ( 
           <Cell key={`cell-${index}`} fill={colors[index % 20]} />
         ))}

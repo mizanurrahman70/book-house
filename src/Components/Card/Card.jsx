@@ -11,14 +11,14 @@ const Card = ({book}) => {
     
     }=book
   return (
-    <Link to={`/${bookId}`}><div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md bg-white text-black w-[374px] ">
+    <Link to={`/${bookId}`}><div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md bg-white text-black lg:w-[374px] ">
 
     <div>
       <div className='w-[326px] h-[230px] bg-[#F3F3F3] rounded-md'>
-        <div className='w-[200px] h-[200px] mx-auto p-5'><img   src={image} alt="" /></div>
+        <div className='lg:w-[200px] lg:h-[200px] mx-auto p-5'><img   src={image} alt="" /></div>
 
       </div>
-   <div className='flex gap-5'>
+   <div className=' lg:flex gap-5'>
    {
       tags.map(tag=><LittleCard tag={tag}></LittleCard>)
     }
