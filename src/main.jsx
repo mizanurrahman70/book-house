@@ -20,6 +20,11 @@ import WhileList from './Components/WhileList/WhileList.jsx'
 import About from './Components/About/About.jsx'
 import BarChart from './Components/BarChart/BarCharts.jsx'
 import BarCharts from './Components/BarChart/BarCharts.jsx'
+import RdCard from './Components/RdCard/RdCard.jsx'
+import Rating from './Components/Rating/Rating.jsx'
+import Number from './Components/NumberOf/Number.jsx'
+import Publisher from './Components/Publisher/Publisher.jsx'
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
        path:`/:id`,
-       loader:()=>fetch('Book.json'),
+       loader:()=>fetch('../Book.json'),
        element:<Book></Book>
 
       },
@@ -42,6 +47,10 @@ const router = createBrowserRouter([
         element:<About></About>
 
       },
+     {
+     path:'/rating',
+     element:<Rating></Rating>
+     },
       {
         path:'/contact',
         element:<Contact></Contact>
@@ -56,13 +65,29 @@ const router = createBrowserRouter([
         children:([
           {
           index:true,
-          element:<RedCard></RedCard>
+          element:<RedCard></RedCard>,
           },
           {
             path:'/listed/while',
             element:<WhileList></WhileList>
 
-          }
+          },
+          {
+            path:'/listed/rating',
+            element:<Rating></Rating>
+
+          },
+          {
+            path:'/listed/number',
+            element:<Number></Number>
+
+          },
+          {
+            path:'/listed/year',
+            element:<Publisher></Publisher>
+
+          },
+         
         ])
       }
     

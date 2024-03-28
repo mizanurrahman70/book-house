@@ -13,7 +13,7 @@ const WhileList = () => {
           const getData=getDataWhile()
           setData(getData)
       },[])
-        console.log(data)
+     
        
            
         return (

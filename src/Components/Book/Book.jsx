@@ -10,7 +10,8 @@ const Book = () => {
  
   const bookPt=parseInt(id)
 
-  const book =Books.find(book=>book.bookId === bookPt)
+  const book =Books.find(books=>books.bookId === bookPt)
+  
   
   
   const {image,author,bookName,category,rating,tags,review,yearOfPublishing,

@@ -5,22 +5,25 @@ import { MdOutlineFindInPage } from 'react-icons/md';
 import LittleCard from '../LittleCard/LittleCard';
 import { Link } from 'react-router-dom';
 
-
-const WhileCard = ({ book }) => {
+const RatingCard = ({book}) => {
+    
     const { image, author, bookName, category, rating, tags, review, yearOfPublishing,
-        totalPages, publisher, bookId } = book
+        totalPages, publisher, } = book
+
+
+
     return (
-        <div className="lg:card lg:card-side bg-base-100 shadow-xl border-2 mb-5">
+        <div className="w-full lg:card lg:card-side bg-base-100 shadow-xl border-2 py-5">
             <div>  <figure><img src={image} alt="Movie" /></figure></div>
-            <div className='flex flex-col text-start ml-5'>
+            <div className=' flex flex-col text-start ml-5'>
                 <h1 className='text-3xl '>{bookName}</h1>
                 <p className='font-medium mt-5'>By<span>{author}</span></p>
                 <div className='flex items-center'>
-                    <div className='lg:flex gap-5'>
-                        <div className='flex mt-6'>
+                    <div className=' lg:flex gap-5'>
+                        <div className='lg:flex mt-6'>
                             <h1>tag</h1>
                         </div>
-                        <div className='lg:flex gap-5'>
+                        <div className=' lg:flex gap-5'>
 
                             {
 
@@ -51,12 +54,11 @@ const WhileCard = ({ book }) => {
                 <div className='lg:flex gap-5 mt-5'>
                     <button class="btn border-none btn-secondary bg-[#328EFF]">Catcher: <span>{category}</span></button>
                     <button class="btn border-none bg-[#FFAC33] btn-secondary">Rating: {rating}</button>
-                    {/* <button class="btn bg-green-600 border-none btn-secondary">View Details</button> */}
-                   <Link to={`/${book.bookId}`}> <button class="btn bg-green-600 border-none btn-secondary">View Details</button></Link>
+                    <Link to={`/${book.bookId}`}><button class="btn bg-green-600 border-none btn-secondary">View Details</button></Link>
                 </div>
             </div>
         </div>
     );
 };
 
-export default WhileCard;
+export default RatingCard;

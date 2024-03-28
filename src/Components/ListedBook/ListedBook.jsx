@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 
 import { Link, Outlet } from 'react-router-dom';
+import DropDown from '../DropDwon/DropDown';
+import Rating from '../Rating/Rating';
+import RatingCard from '../RatingCard/RatingCard';
+
 
 
 
@@ -11,6 +15,11 @@ const ListedBook = () => {
         <div>
             <div className=' w-full lg:w-[1169px] lg:h-[100px] bg-slate-400 mx-auto rounded-md'>
                 <h1 className='text-3xl flex items-center justify-center pt-5'> Book</h1>
+            </div>
+            <div className='mt-5'>
+                <DropDown></DropDown>
+             
+                
             </div>
             <div className="flex mt-5">
 	<Link to=''><p onClick={()=>setActive(1)} rel="noopener noreferrer" href="#" className={`flex flex-shrink-0 px-5 py-3 space-x-2 dark:border-gray-600 dark:text-gray-600 ${active== 1?'border border-b-0' : 'border-b'}`}>
