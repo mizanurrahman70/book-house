@@ -34,8 +34,10 @@ export const getDataWhile=()=>{
 }
 // while save data 
 export const whileSave = (data) => {
+    console.log(data)
     const read=getData()
-    const have =read.find(data=>data.bookId === data.bookId)
+    console.log(read)
+    const have =read.find(datas=>datas.bookId === data.bookId)
     if(have){
         toast.error("Book already read!");
         return

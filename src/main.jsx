@@ -59,7 +59,7 @@ const router = createBrowserRouter([
           element:<RedCard></RedCard>
           },
           {
-            path:'while',
+            path:'/listed/while',
             element:<WhileList></WhileList>
 
           }
