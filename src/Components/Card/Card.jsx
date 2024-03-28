@@ -11,7 +11,7 @@ const Card = ({book}) => {
     
     }=book
   return (
-    <Link to={`/${bookId}`}><div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md bg-white text-black lg:w-[374px] ">
+    <Link to={`/${bookId}`}><div className="flex flex-col lg:max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md bg-slate-200 text-black lg:w-[374px] mt-5 mx-auto">
 
     <div>
       <div className='w-[326px] h-[230px] bg-[#F3F3F3] rounded-md'>
@@ -30,7 +30,7 @@ const Card = ({book}) => {
       </div>
       <div class="divider"></div>
     </div>
-    <div className="flex flex-wrap justify-between">
+    <div className="flex flex-wrap sm:gap-5 lg:justify-between">
       <div className="space-x-2">
         <h1 className='font-semibold text-xl text-gray-900'>{category}</h1>
 

@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
-        <section className="bg-gray-800 text-gray-100 mt-10 rounded-md">
-        <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+        <section className="w-full sm:ml-5 sm:overflow-hidden bg-gray-800 text-gray-100 mt-10 rounded-md">
+        <div className="lg:container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
             <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                 <h1 className="lg:text-5xl font-bold leading-none sm:text-6xl">Books to freshen up your bookshelf 
                 </h1>

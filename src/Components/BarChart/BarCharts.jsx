@@ -31,11 +31,25 @@ const BarCharts=()=> {
     setBlogs(savedBlogs); 
   }, []);
 
-  console.log(blogs)
+  const [chartWidth, setChartWidth] = useState(1200);
+  useEffect(() => {
+    const handleResize = () => {
+      const newWidth = window.innerWidth > 1200 ? 1200 : window.innerWidth - 50;
+      setChartWidth(newWidth);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <BarChart
-      width={1200}
+      width={chartWidth}
       height={500}
       data={blogs} 
       margin={{

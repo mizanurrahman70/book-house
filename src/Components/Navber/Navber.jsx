@@ -18,7 +18,7 @@ const Navber = () => {
      <li> <NavLink to='/about'>About</NavLink></li>
       </ul>
     </div>
-   <Link to='/'><p className="btn btn-ghost text-2xl font-extrabold ">Book Liberary</p></Link> 
+   <Link to='/'><p className="btn btn-ghost lg:text-2xl lg:font-extrabold ">Book Liberary</p></Link> 
   </div>
   <div className="navbar-center hidden lg:flex items-center">
     <ul className="menu menu-horizontal px-1 space-x-5">
@@ -31,7 +31,7 @@ const Navber = () => {
      <li> <NavLink to='/about'>About</NavLink></li>
     </ul>
   </div>
-  <div className="navbar-end gap-5 ">
+  <div className="mr-5 lg:navbar-end gap-5 ">
     <a className=" btn bg-indigo-600">Sign In </a>
     <a className="btn bg-green-500">Sign Up</a>
   </div>

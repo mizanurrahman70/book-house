@@ -9,7 +9,7 @@ const ListedBook = () => {
   
     return (
         <div>
-            <div className='w-[1169px] h-[100px] bg-slate-400 mx-auto rounded-md'>
+            <div className=' w-full lg:w-[1169px] lg:h-[100px] bg-slate-400 mx-auto rounded-md'>
                 <h1 className='text-3xl flex items-center justify-center pt-5'> Book</h1>
             </div>
             <div className="flex mt-5">
