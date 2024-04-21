@@ -5,10 +5,17 @@ import Footer from '../Footer/Footer';
 
 const Root = () => {
     return (
-        <div>
+        <div className=''>
+            <div className='container mx-auto'>
             <Navber></Navber>
+            
+            <div className='min-h-[calc(100vh-274px)]'>
             <Outlet></Outlet>
+            </div>
+            </div>
+            <div >
             <Footer></Footer>
+            </div>
         </div>
     );
 };
