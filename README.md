@@ -12,7 +12,7 @@
 - progrecc report sysem have
 - book read list have
 - whis book list store
-- this website frendly and dainamic 
+- this website frendly and dainamicc 
 
 
 
